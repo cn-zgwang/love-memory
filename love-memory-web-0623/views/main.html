@@ -40,7 +40,7 @@
           line-height: 30px;
           width: 90%;
           margin: 0px auto;
-          color: #fff;
+          color: #DB70DB;
           font-size: 15px;
           text-align: center;
           font-weight: bold;
@@ -107,10 +107,10 @@
     outline: mediumaquamarine;
 }
 .btn-con {
-    width: 80%;
+    width: 100%;
     height: 30px;
     position: relative;
-    margin: 30px auto;
+    margin: 30px 30px 30px 40px;
 }
 .vcode {
     width: 35%;
@@ -148,7 +148,7 @@
     line-height: 30px;
     color: #fff;
     font-size: 16px;
-    background-color: #555;
+    background-color: #ccc;
     text-align: center;
     border-radius: 2px;
     float: left;
@@ -187,17 +187,27 @@
 .mui-input-row label{
   line-height: 1.5;
 }
+.header {
+  margin: 10% 0;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  text-align: center;
+}
 </style>
  </head>
 <body class="bg">
   <div style="margin-top:30px;">
-    <div class="greeting-title">最美的祝福</div>
+    <div class="header">
+      <img src="img/logo3.png" height="100" width="300" class="title">
+    </div>
     <div class="greeting-content" style="margin-top:20px;">
         <div class="receiver">
             收件人：
             <input type="text" id="receiver" autofocus="autofocus">
         </div>
-        <textarea name="greetings" id="content" style="margin-top:10px" cols="40" rows="10" placeholder="祝福语"></textarea>
+        <textarea name="greetings" id="content" style="margin-top:10px" cols="40"
+                  rows="10" placeholder="祝福语 ( 例子：最美的祝福，无非是在这里说爱你；最真诚的爱，是埋在我心底的情话。)"></textarea>
         <div class="sender">
             寄件人：
             <input type="text" id="sender">
@@ -205,40 +215,16 @@
     </div>
     <div class="infoArea" style="margin-top:20px;">
       <form class="mui-input-group">
-        <div class="mui-input-row" style="height: 35px;">
+        <div class="mui-input-row" style="height: 40px;">
             <label style="font-size: 14px;">收件人手机号 : </label>
             <input type="text" class="mui-input-clear" placeholder="手机号" id="telInput">
         </div>
       </form>
     </div>
-    <!--<div class="btn-con">
-        <div id="vCode1" class="vcode"></div>
-        <input type="text" id="code1" class="vcode_text" style="width: 35%;height: 35px;margin-bottom: 0px" />
-    </div>-->
     <div class="btn-con" >
-        <div class="save" id="save" onclick="save()">发送</div>
-        <div class="cancel" id="cancel" onclick="back()">返回</div>
-        <!--<div class="save" id="editOrder" onclick="editOrder()" style="color: #999;" disabled='true'>编辑</div>
-        <div class="cancel" id="deleteOrder" onclick="deleteOrder()" style="color: #999; margin-right: 0px;float: right;" disabled='true'>删除</div>-->
+        <div class="save" id="save" align="center" onclick="save()">发送</div>
     </div>
-    <!--<div class="btn-con">
-      <div class="mui-input-row mui-search">
-        <input type="search" class="mui-input-clear" style="background-color:rgba(255, 255, 255,0.85);border: 1px solid #ccc;" placeholder="点击可搜索历史留言" onkeydown="handleCommentInputKeyDown(event)" id="search">
-      </div>
-    </div>
-     <table class="mui-table tableContainer" id="AreaContainer">
-        <thead>
-          <tr>
-            <th>创建时间</th>
-            <th>查看手机号</th>
-            <th>订单号</th>
-            <th>署名</th>
-          </tr>
-        </thead>
-        <tbody class="tableBody" id="commentArea">
-        </tbody>
-      </table>-->
-      <div class="footer">
+    <div class="footer">
       <a href="tel:18810802046"><p style="margin: 0px"><span class="mui-icon mui-icon-phone" style="font-size: 20px"></span>18810802046</p></a>
       <p style="margin: 0px">我们永远是我们，没有从前和后来</p>
     </div>
